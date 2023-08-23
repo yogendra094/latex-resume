@@ -1,0 +1,194 @@
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Yogendra}{Rajpoot}{ \urlstyle{same}\href{mailto:amankumar.er6174@gmail.com}{rajpootyogendra2532@gmail.com}| +91-9541063100 | \href{https://github.com/yogendra094}{github} | 
+\href{https://www.linkedin.com/in/yogendra-rajpoot-686b16255/}{LinkedIn} \\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Shri Mata Vaishno Devi University}
+\descript{Btech in Electronics \& Communication}
+\location{Aug 2020-24| Katra,J\&K, INDIA \\ CGPA : 6.72}
+\sectionsep
+
+% \subsection{Cornell University}
+% \descript{BS in Computer Science}
+% \location{May 2014 | Ithaca, NY}
+% College of Engineering \\
+% Magna Cum Laude\\
+% \location{ Cum. GPA: 3.83 / 4.0 \\
+% Major GPA: 3.9 / 4.0}
+% \sectionsep
+
+\subsection{M.M.D.A.Inter Collegel}
+\location{12th-High school. May 2019|  UP, India}\\78\%
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+
+Codestudio://\href{https://www.codingninjas.com/studio/profile/4dc5bdc9-0741-49b9-a6f1-627fc0b}{\bf yogendra} \\
+Geeksforgeeks: \href{https://auth.geeksforgeeks.org/user/rajpootyogh0hm}{\bf amankumar003}\\
+Leetcode: \href{https://leetcode.com/jacs52/}{\bf yogendra} \\
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+% \location{Over 4000 lines:}
+C++ (DSA)\textbullet{} IoT \textbullet\\
+\sectionsep
+\subsection{Tools/Platforms}
+\sectionsep
+\textbullet{} html
+css \textbullet{} SQL
+
+Git \textbullet{} Microprocessor \textbullet{} VLSI \textbullet{} Verilog\   \\
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Roles and Responsibility}
+\subsection{Front End Developer GDSC SMVDU}
+\sectionsep
+Designed login and sign up pages for website \\
+Responsible for smooth conduct of gdsc session\\
+
+
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\sectionsep
+
+
+\runsubsection{Shri Mata Vaishno Devi University}
+\descript{| VLSI INTERN }
+\location{July 2022 – August 2022 | SMVDU, JK, India}
+\begin{tightemize}
+\sectionsep
+\item Researched and worked on Invertor, AND , OR logic gates etc , and created reports on research activities.
+\item analysed power consumption and delay of the MOS gates
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project}
+\runsubsection{IoT-based-ultrasonic-radar-system}
+\descript{| IoT | Aurdino | Ultrasonic sensor | servo motor | Visual software skills{\href{https://github.com/yogendra094/IoT-based-ultrasonic-radar-system}{\textcolor{cyan}{\textbf{link}}}}}
+\begin{tightemize}
+\item project utilized an ultrasonic sensor to capture real-time distance data, which was then processed to control a servo motor for directional movement. 
+\item The integration of visual software provided a user-friendly interface to monitor and analyze the radar's output. 
+\item Through this project, I demonstrated my proficiency in IoT technology, hardware interfacing, and software integration 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Water alarm system pcb design}
+\descript{| PCB manufacturing and design, |{\href{https://github.com/yogendra094/Water-alarm-system-pcb-design}{\textcolor{cyan}{\textbf{See Project}}}}}
+\begin{tightemize}
+\item  conceived and executed a water alarm system, showcasing my expertise in PCB design and manufacturing. 
+\item project involved creating a custom PCB to accommodate water sensors, signal processing components, and an alarm module.\item By seamlessly integrating hardware and design, 
+\item I demonstrated my ability to transform conceptual ideas into practical, functional solutions.
+\end{tightemize}
+\sectionsep
+
+
+% \end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards and Achievements} 
+\begin{tabular}{rll}
+2023	     & 1st round  & Coding Ninjas CodeKaze Challenge\\
+2023	     & 500+  & DSA \& CP questions on multiple platform\\    
+2023	     & web developer  & Google developer student club \\
+\end{tabular}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
